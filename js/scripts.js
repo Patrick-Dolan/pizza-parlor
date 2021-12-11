@@ -45,7 +45,20 @@ Pizza.prototype.calculatePizzaPrice = function() {
 // Global Variables
 let order = new Order;
 // UI Logic
-
+function displayOrderDetails(order) {
+  let orderList = $("ol#orderList");
+  let htmlForOrder = "";
+  Object.keys(order.pizzas).forEach(function(key) {
+    const pizza = order.pizzas[key];
+    let toppings = "<ul>";
+    pizza.toppings.forEach(function(topping) {
+      toppings += "<li>" + topping + " $1.00" + "</li>"; 
+    });
+    toppings += "</ul>";
+    htmlForOrder = "<li id=" + pizza.id + "> Pizza $" + pizza.pizzaPrice.toFixed(2) + "</li>" + toppings;
+  });
+  orderList.append(htmlForOrder);
+}
 // jQuery
 $(document).ready(function() {
   $("form#pizzaForm").submit(function(event) {
@@ -62,7 +75,7 @@ $(document).ready(function() {
     order.addPizza(pizza);
     order.calculateOrderTotal();
     $("#transactionSubmit button").prop("disabled", false);
-    console.log(pizza);
-    console.log(order);
+    displayOrderDetails(order);
+    //console.log(order);
   });
 });
