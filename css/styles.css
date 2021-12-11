@@ -2,3 +2,6 @@
 #pizzaSizeContainer, #pizzaToppingsContainer {
   margin-bottom: 1em;
 }
+#transactionDetails {
+  text-align: right;
+}
