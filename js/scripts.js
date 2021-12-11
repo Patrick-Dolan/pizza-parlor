@@ -42,6 +42,18 @@ Pizza.prototype.calculatePizzaPrice = function() {
       return this.pizzaPrice += 16;
   }
 };
+Pizza.prototype.fetchPizzaSizePrice = function() {
+  switch (this.size) {
+    case "Small":
+      return "$10.00";
+    case "Medium":
+      return "$12.00";
+    case "Large":
+      return "$14.00";
+    case "X-large":
+      return "$16.00";
+  }
+};
 // Global Variables
 let order = new Order;
 // UI Logic
