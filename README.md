@@ -69,6 +69,6 @@ pizza1.toppings;
 **Code:**  
 let toppingsArray = ["cheese", "pepperoni", "bell_peppers"];  
 pizza1.addToppings(toppingsArray);  
-calculateToppingPrice();  
+pizza1.calculateToppingPrice();  
 pizza1.toppingPrice;  
-**Expected Output:** "$3.00" 
+**Expected Output:** "3" 

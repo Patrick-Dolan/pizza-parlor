@@ -9,6 +9,9 @@ function Pizza(size) {
 Pizza.prototype.addToppings = function(toppings) {
   this.toppings = toppings;
 };
+Pizza.prototype.calculateToppingPrice = function() {
+  this.toppingPrice = this.toppings.length;
+};
 //Global Variables
 let order = new Order;
 let pizza1 = new Pizza("small");
