@@ -71,8 +71,8 @@ order.pizzas[2];
 **Test:** "It should add together the pizzaPrice properies of all objects inside pizzas object and output the number"  
 **Code:**  
 let order = new Order();  
-let pizza1 = new Pizza("small", pizzaPrice: 13, toppings: ['cheese', 'pepperoni', 'bell_peppers'], toppingPrice: 3);  
-let pizza2 = new Pizza("large", pizzaPrice: 18, toppings: ['cheese', 'pepperoni', 'bell_peppers', 'italian_sausage'], toppingPrice: 4);  
+let pizza1 = {size: "small", pizzaPrice: 13, toppings: ['cheese', 'pepperoni', 'bell_peppers'], toppingPrice: 3};  
+let pizza2 = {size: "large", pizzaPrice: 18, toppings: ['cheese', 'pepperoni', 'bell_peppers', 'italian_sausage'], toppingPrice: 4};  
 order.addPizza(pizza1);  
 order.addPizza(pizza2);
 order.calculateOrderTotal();
