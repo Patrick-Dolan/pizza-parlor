@@ -58,6 +58,7 @@ function displayOrderDetails(order) {
     htmlForOrder = "<li id=" + pizza.id + "> Pizza $" + pizza.pizzaPrice.toFixed(2) + "</li>" + toppings;
   });
   orderList.append(htmlForOrder);
+  $("#totalCostDiv").html("$" + order.orderTotal.toFixed(2));
 }
 // jQuery
 $(document).ready(function() {

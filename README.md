@@ -120,4 +120,5 @@ pizza1.calculatePizzaPrice();
 **Test:** "It should display information from the order object in the order details section"  
 **Code:**  
 displayOrderDetails();  
-**Expected Output:** "{orderTotal: 11, pizzas: {1: Pizza}}
+**Expected Output:** "{orderTotal: 11, pizzas: {1: Pizza}}"  
+  
