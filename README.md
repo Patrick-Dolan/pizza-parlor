@@ -49,16 +49,26 @@ order;
   
 **Test:** "It should return the details on the pizza"  
 **Code:**  
-let size = "small";
+let size = "small";  
 let pizza1 = new Pizza(size)  
-pizza1;
-**Expected Output:** "Pizza {size: "small"}" 
+pizza1;  
+**Expected Output:** "Pizza {size: "small"}"  
   
-**describe Pizza.prototype.addToppings(toppings)**
-
+**describe Pizza.prototype.addToppings(toppings)**  
+  
 **Test:** "It should add toppings array to pizza object"  
 **Code:**  
-let toppingsArray = ["cheese", "pepperoni", "bell_peppers"];
-addToppings(toppingsArray);  
+let toppingsArray = ["cheese", "pepperoni", "bell_peppers"];  
+pizza1.addToppings(toppingsArray);  
 pizza1.toppings;  
-**Expected Output:** "["cheese", "pepperoni", "bell_peppers"]"
+**Expected Output:** "["cheese", "pepperoni", "bell_peppers"]"  
+  
+**describe Pizza.prototype.calculateToppingPrice()**  
+  
+**Test:** "It should add together the cost for all toppings and add them to the pizza object"  
+**Code:**  
+let toppingsArray = ["cheese", "pepperoni", "bell_peppers"];  
+pizza1.addToppings(toppingsArray);  
+calculateToppingPrice();  
+pizza1.toppingPrice;  
+**Expected Output:** "$3.00" 
