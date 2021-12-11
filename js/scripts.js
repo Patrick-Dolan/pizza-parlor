@@ -32,13 +32,13 @@ Pizza.prototype.calculateToppingPrice = function() {
 Pizza.prototype.calculatePizzaPrice = function() {
   (isNaN(this.toppingPrice) ? this.pizzaPrice = 0 : this.pizzaPrice = this.toppingPrice);
   switch (this.size) {
-    case "small":
+    case "Small":
       return this.pizzaPrice += 10;
-    case "medium":
+    case "Medium":
       return this.pizzaPrice += 12;
-    case "large":
+    case "Large":
       return this.pizzaPrice += 14;
-    case "x-large":
+    case "X-large":
       return this.pizzaPrice += 16;
   }
 };
@@ -52,7 +52,7 @@ function displayOrderDetails(order) {
     const pizza = order.pizzas[key];
     let toppings = "<ul>";
     pizza.toppings.forEach(function(topping) {
-      toppings += "<li>" + topping + " $1.00" + "</li>"; 
+      toppings += "<li>" + topping.split("_").join(" ") + " $1.00" + "</li>"; 
     });
     toppings += "</ul>";
     htmlForOrder = "<li id=" + pizza.id + "> Pizza $" + pizza.pizzaPrice.toFixed(2) + "</li>" + toppings;
