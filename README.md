@@ -35,9 +35,22 @@ _MIT_
 Copyright (c) _2021_ _Patrick Dolan_  
   
 ## Tests  
-**describe pizza()**  
+
+**describe Order()**  
+  
+**Test:** "It should return the details on the order"  
+**Code:**  
+let order = new Order();  
+order;
+**Expected Output:** "Order {pizzas: {}}" 
+
+**describe Pizza(size)**  
   
 **Test:** "It should return the details on the pizza"  
 **Code:**  
-pizza()  
-**Expected Output:** "Pizza"  
+let size = "small";
+let pizza1 = new Pizza(size)  
+pizza1;
+**Expected Output:** "Pizza {size: "small"}" 
+  
+
