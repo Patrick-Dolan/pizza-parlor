@@ -44,6 +44,15 @@ let order = new Order();
 order;
 **Expected Output:** "Order {pizzas: {}}" 
   
+**describe Order.prototype.addPizza(pizza)**  
+  
+**Test:** "It should add a pizza object to the order objects pizzas property"  
+**Code:**  
+let order = new Order();  
+let pizza1 = new Pizza("small");  
+order.addPizza(pizza1);  
+order;  
+**Expected Output:** "Order {pizzas: {pizza1}}"  
   
 **describe Pizza(size)**  
   
