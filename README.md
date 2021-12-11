@@ -113,4 +113,11 @@ pizza1.toppingPrice;
 **Code:**  
 let pizza1 = {size: "small", toppings: ["cheese", "pepperoni", "bell_peppers"]}  
 pizza1.calculatePizzaPrice();  
-**Expected Output:** "13" 
+**Expected Output:** "13"  
+  
+**describe displayOrderDetails()**  
+  
+**Test:** "It should display information from the order object in the order details section"  
+**Code:**  
+displayOrderDetails();  
+**Expected Output:** "{orderTotal: 11, pizzas: {1: Pizza}}

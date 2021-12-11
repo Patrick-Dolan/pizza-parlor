@@ -42,9 +42,11 @@ Pizza.prototype.calculatePizzaPrice = function() {
       return this.pizzaPrice += 16;
   }
 };
-//Global Variables
+// Global Variables
 let order = new Order;
 // UI Logic
+
+// jQuery
 $(document).ready(function() {
   $("form#pizzaForm").submit(function(event) {
     event.preventDefault();
