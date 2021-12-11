@@ -54,6 +54,18 @@ order.addPizza(pizza1);
 order;  
 **Expected Output:** "Order {pizzas: {pizza1}}"  
   
+**describe Order.prototype.assignId()**  
+  
+**Test:** "It should assign a unique id to each pizza added to an order"  
+**Code:**  
+let order = new Order();  
+let pizza1 = new Pizza("small");  
+let pizza2 = new Pizza("medium");  
+order.addPizza(pizza1);  
+order.addPizza(pizza2);  
+order.pizza2.Id;  
+**Expected Output:** "2"  
+  
 **describe Pizza(size)**  
   
 **Test:** "It should return the details on the pizza"  
