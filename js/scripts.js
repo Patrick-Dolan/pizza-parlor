@@ -59,6 +59,7 @@ $(document).ready(function() {
     pizza.calculatePizzaPrice();
     order.addPizza(pizza);
     order.calculateOrderTotal();
+    $("#transactionSubmit button").prop("disabled", false);
     console.log(pizza);
     console.log(order);
   });
