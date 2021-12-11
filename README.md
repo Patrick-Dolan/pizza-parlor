@@ -2,7 +2,7 @@
 
 #### By _**Patrick Dolan**_
 
-#### _A web app that lets you build a pizza and get a price for it._
+#### _A web app that lets you build a pizza order and get a price for it._
 
 ## Technologies Used
 
@@ -12,7 +12,7 @@
 
 ## Description
 
-_A pizza parlor site that allows you to choose a size pizza and the different toppings you want on the pizza and gives you a price for it._
+_A pizza parlor site that allows you to add pizzas with different sizes and toppings and gives you a price for it._
 
 ## Setup/Installation Requirements
 
