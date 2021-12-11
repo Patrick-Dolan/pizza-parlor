@@ -2,6 +2,9 @@
 function Order() {
   this.pizzas = {};
 }
+Order.prototype.addPizza = function(pizza) {
+  this.pizzas[pizza.size] = pizza;
+};
 // Business Logic for Pizzas
 function Pizza(size) {
   this.size = size;
