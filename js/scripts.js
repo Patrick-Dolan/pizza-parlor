@@ -11,6 +11,14 @@ Order.prototype.assignId = function() {
   this.currentId += 1;
   return this.currentId;
 };
+Order.prototype.calculateOrderTotal = function() {
+  let temp = 0;
+  const pizzaKeys = Object.keys(this.pizzas);
+  for(let i = 1; i <= pizzaKeys.length; i++) {
+    temp += this.pizzas[i].pizzaPrice;
+  }
+  this.orderTotal = temp;
+};
 // Business Logic for Pizzas
 function Pizza(size) {
   this.size = size;
@@ -36,4 +44,4 @@ Pizza.prototype.calculatePizzaPrice = function() {
 };
 //Global Variables
 let order = new Order;
-let pizza1 = new Pizza("small");
+//let pizza1 = new Pizza("small");
