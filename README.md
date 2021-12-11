@@ -126,3 +126,11 @@ displayOrderDetails();
 **Code:**  
 displayOrderDetails();  
 **Expected Output:** "Pizza (large)"  
+  
+**describe Pizza.prototype.fetchPizzaSizePrice()**  
+  
+**Test:** "It should return the pizza price according to size only"  
+**Code:**  
+let pizza1 = {size: "small", toppings: ["cheese", "pepperoni", "bell_peppers"]};  
+pizza1.fetchPizzaSizePrice();  
+**Expected Output:** "$10.00"  
