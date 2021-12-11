@@ -45,3 +45,16 @@ Pizza.prototype.calculatePizzaPrice = function() {
 //Global Variables
 let order = new Order;
 //let pizza1 = new Pizza("small");
+// UI Logic
+$(document).ready(function() {
+  $("form#pizzaForm").submit(function(event) {
+    event.preventDefault();
+    let size = $("input:radio[name=pizzaSizes]:checked").val();
+    let toppings = [];
+    $.each($("input[name=pizzaToppings]:checked"), function() {
+      toppings.push($(this) .val());
+    });
+    console.log(size);
+    console.log(toppings);
+  });
+});
