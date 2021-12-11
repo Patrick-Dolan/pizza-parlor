@@ -43,7 +43,8 @@ Copyright (c) _2021_ _Patrick Dolan_
 let order = new Order();  
 order;
 **Expected Output:** "Order {pizzas: {}}" 
-
+  
+  
 **describe Pizza(size)**  
   
 **Test:** "It should return the details on the pizza"  
@@ -53,4 +54,11 @@ let pizza1 = new Pizza(size)
 pizza1;
 **Expected Output:** "Pizza {size: "small"}" 
   
+**describe Pizza.prototype.addToppings(toppings)**
 
+**Test:** "It should add toppings array to pizza object"  
+**Code:**  
+let toppingsArray = ["cheese", "pepperoni", "bell_peppers"];
+addToppings(toppingsArray);  
+pizza1.toppings;  
+**Expected Output:** "["cheese", "pepperoni", "bell_peppers"]"
