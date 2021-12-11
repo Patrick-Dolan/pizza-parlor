@@ -76,6 +76,7 @@ let pizza2 = {size: "large", pizzaPrice: 18, toppings: ['cheese', 'pepperoni', '
 order.addPizza(pizza1);  
 order.addPizza(pizza2);
 order.calculateOrderTotal();
+order.orderTotal;
 **Expected Output:** "31"  
   
 **describe Pizza(size)**  
