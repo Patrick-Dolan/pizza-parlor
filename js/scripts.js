@@ -62,7 +62,7 @@ function displayOrderDetails(order) {
   let htmlForOrder = "";
   Object.keys(order.pizzas).forEach(function(key) {
     const pizza = order.pizzas[key];
-    let toppings = "<ul>" + "<li>" + pizza.size + "</li>";
+    let toppings = "<ul>" + "<li>" + pizza.size + " <em>(+" + pizza.fetchPizzaSizePrice() + ")</em>" + "</li>";
     pizza.toppings.forEach(function(topping) {
       toppings += "<li>" + topping.split("_").join(" ") + " <em>(+$1.00)</em>" + "</li>"; 
     });
