@@ -122,7 +122,7 @@ pizza1.calculatePizzaPrice();
 displayOrderDetails();  
 **Expected Output:** "{orderTotal: 11, pizzas: {1: Pizza}}"  
   
-**Test:** "It should display name of topping on left and price on right"  
+**Test:** "It should display the size of the pizza in the order details"  
 **Code:**  
 displayOrderDetails();  
-**Expected Output:** "Cheese               $1.00"  
+**Expected Output:** "Pizza (large)"  
