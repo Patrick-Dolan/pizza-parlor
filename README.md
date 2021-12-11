@@ -100,4 +100,4 @@ pizza1.toppingPrice;
 **Code:**  
 let pizza1 = {size: "small", toppings: ["cheese", "pepperoni", "bell_peppers"]}  
 pizza1.calculatePizzaPrice();  
-**Expected Output:** "$13.00" 
+**Expected Output:** "13" 
