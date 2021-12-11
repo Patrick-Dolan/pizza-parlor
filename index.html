@@ -13,51 +13,59 @@
       <h1>Pizza Parlor</h1>
     </div>
     <div class="row">
-      <div class="col-md-6">
-        <form id="pizzaForm">
-          <!--Pizza Size Section-->
-          <p><strong>Select pizza size:</strong></p>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="pizzaSizes" id="pizzaSize1" value="small" checked>
-            <label class="form-check-label" for="pizzaSize1">Small: $10.00</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="pizzaSizes" id="pizzaSize2" value="medium">
-            <label class="form-check-label" for="pizzaSize2">Medium: $12.00</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="pizzaSizes" id="pizzaSize3" value="large">
-            <label class="form-check-label" for="pizzaSize3">Large: $14.00</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="pizzaSizes" id="pizzaSize4" value="x-large">
-            <label class="form-check-label" for="pizzaSize4">X-Large: $16.00</label>
-          </div>
-          <!--Pizza Toppings Section-->
-          <p><strong>Choose your toppings:</strong><br><em>$1 per topping.</em></p>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="pizzaToppings" id="pizzaTopping1" value="cheese" checked>
-            <label class="form-check-label" for="pizzaTopping1">cheese</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="pizzaToppings" id="pizzaTopping2" value="pepperoni">
-            <label class="form-check-label" for="pizzaTopping2">Pepperoni</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="pizzaToppings" id="pizzaTopping3" value="italian_sausage">
-            <label class="form-check-label" for="pizzaTopping3">Italian Sausage</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="pizzaToppings" id="pizzaTopping4" value="bell_peppers">
-            <label class="form-check-label" for="pizzaTopping4">Bell Peppers</label>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Order my pizza!</button>
-        </form>
-      </div>
+      <!--Build Pizza Section-->
       <div class="col-md-6">
         <div class="card">
           <div class="card-body">
-            <h3 class="card-title">Your order:</h3>
+            <h3 class="card-title">Build your custom pizza!</h3>
+            <hr>
+            <form id="pizzaForm">
+              <!--Pizza Size Section-->
+              <p><strong>Select pizza size:</strong></p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="pizzaSizes" id="pizzaSize1" value="small" checked>
+                <label class="form-check-label" for="pizzaSize1">Small: $10.00</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="pizzaSizes" id="pizzaSize2" value="medium">
+                <label class="form-check-label" for="pizzaSize2">Medium: $12.00</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="pizzaSizes" id="pizzaSize3" value="large">
+                <label class="form-check-label" for="pizzaSize3">Large: $14.00</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="pizzaSizes" id="pizzaSize4" value="x-large">
+                <label class="form-check-label" for="pizzaSize4">X-Large: $16.00</label>
+              </div>
+              <!--Pizza Toppings Section-->
+              <p><strong>Choose your toppings:</strong><br><em>$1 per topping.</em></p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="pizzaToppings" id="pizzaTopping1" value="cheese" checked>
+                <label class="form-check-label" for="pizzaTopping1">cheese</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="pizzaToppings" id="pizzaTopping2" value="pepperoni">
+                <label class="form-check-label" for="pizzaTopping2">Pepperoni</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="pizzaToppings" id="pizzaTopping3" value="italian_sausage">
+                <label class="form-check-label" for="pizzaTopping3">Italian Sausage</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="pizzaToppings" id="pizzaTopping4" value="bell_peppers">
+                <label class="form-check-label" for="pizzaTopping4">Bell Peppers</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Order my pizza!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--Order Details Section-->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Order Details:</h3>
             <hr>
             <ol id="orderList">
             </ol>
