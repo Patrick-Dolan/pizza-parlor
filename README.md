@@ -4,6 +4,10 @@
 
 #### _A web app that lets you build a pizza order and get a price for it._
 
+## Github Pages
+
+[Pizza Parlor Github Pages](https://patrick-dolan.github.io/pizza-parlor/)
+
 ## Technologies Used
 
 * _HTML & CSS_
