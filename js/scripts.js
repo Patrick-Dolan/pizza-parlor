@@ -55,7 +55,7 @@ function displayOrderDetails(order) {
       toppings += "<li>" + topping.split("_").join(" ") + " $1.00" + "</li>"; 
     });
     toppings += "</ul>";
-    htmlForOrder = "<li id=" + pizza.id + "> Pizza $" + pizza.pizzaPrice.toFixed(2) + "</li>" + toppings;
+    htmlForOrder = "<li id=" + pizza.id + ">" + pizza.size + " Pizza $" + pizza.pizzaPrice.toFixed(2) + "</li>" + toppings;
   });
   orderList.append(htmlForOrder);
   $("#totalCostDiv").html("$" + order.orderTotal.toFixed(2));
