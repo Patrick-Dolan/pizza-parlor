@@ -63,8 +63,8 @@ let pizza1 = new Pizza("small");
 let pizza2 = new Pizza("medium");  
 order.addPizza(pizza1);  
 order.addPizza(pizza2);  
-order.pizza2.Id;  
-**Expected Output:** "2"  
+order.pizzas[2];  
+**Expected Output:** "Pizza {size: "medium", id: 2}"  
   
 **describe Pizza(size)**  
   
@@ -92,4 +92,12 @@ let toppingsArray = ["cheese", "pepperoni", "bell_peppers"];
 pizza1.addToppings(toppingsArray);  
 pizza1.calculateToppingPrice();  
 pizza1.toppingPrice;  
-**Expected Output:** "3" 
+**Expected Output:** "3"  
+  
+**describe Pizza.prototype.calculatePizzaPrice()**  
+  
+**Test:** "It should add together the cost of toppings and pizzas size to make a total for that pizza"  
+**Code:**  
+let pizza1 = {size: "small", toppings: ["cheese", "pepperoni", "bell_peppers"]}  
+pizza1.calculatePizzaPrice();  
+**Expected Output:** "$13.00" 
