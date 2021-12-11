@@ -91,4 +91,9 @@ $(document).ready(function() {
     displayOrderDetails(order);
     //console.log(order);
   });
+  $("#transactionSubmit button").click(function() {
+    $("#buildPizza").hide();
+    $("#pizzaOrdered").slideDown();
+    $("#transactionSubmit button").hide();
+  });
 });
