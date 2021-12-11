@@ -6,6 +6,9 @@ function Order() {
 function Pizza(size) {
   this.size = size;
 }
+Pizza.prototype.addToppings = function(toppings) {
+  this.toppings = toppings;
+};
 //Global Variables
 let order = new Order;
 let pizza1 = new Pizza("small");
