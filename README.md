@@ -46,7 +46,7 @@ Copyright (c) _2021_ _Patrick Dolan_
 **Code:**  
 let order = new Order();  
 order;
-**Expected Output:** "Order {pizzas: {}}" 
+**Expected Output:** "Order {pizzas: {}, orderTotal: 0, currentId: 0}" 
   
 **describe Order.prototype.addPizza(pizza)**  
   
