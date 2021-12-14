@@ -20,12 +20,10 @@ Order.prototype.calculateOrderTotal = function() {
   this.orderTotal = temp;
 };
 // Business Logic for Pizzas
-function Pizza(size) {
+function Pizza(size, toppings) {
   this.size = size;
-}
-Pizza.prototype.addToppings = function(toppings) {
   this.toppings = toppings;
-};
+}
 Pizza.prototype.calculateToppingPrice = function() {
   this.toppingPrice = this.toppings.length;
 };
@@ -54,8 +52,6 @@ Pizza.prototype.fetchPizzaSizePrice = function() {
       return "$16.00";
   }
 };
-// Global Variables
-
 // UI Logic
 function displayOrderDetails(order) {
   let orderList = $("ol#orderList");
@@ -82,8 +78,7 @@ $(document).ready(function() {
     $.each($("input[name=pizzaToppings]:checked"), function() {
       toppings.push($(this) .val());
     });
-    let pizza = new Pizza(size);
-    pizza.addToppings(toppings);
+    let pizza = new Pizza(size, toppings);
     pizza.calculateToppingPrice();
     pizza.calculatePizzaPrice();
     order.addPizza(pizza);
