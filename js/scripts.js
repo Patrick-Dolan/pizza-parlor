@@ -55,7 +55,7 @@ Pizza.prototype.fetchPizzaSizePrice = function() {
   }
 };
 // Global Variables
-let order = new Order;
+
 // UI Logic
 function displayOrderDetails(order) {
   let orderList = $("ol#orderList");
@@ -74,6 +74,7 @@ function displayOrderDetails(order) {
 }
 // jQuery
 $(document).ready(function() {
+  let order = new Order;
   $("form#pizzaForm").submit(function(event) {
     event.preventDefault();
     let size = $("input:radio[name=pizzaSizes]:checked").val();
