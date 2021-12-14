@@ -1,6 +1,7 @@
 // Business Logic for Order
 function Order() {
   this.pizzas = {};
+  this.orderTotal = 0;
   this.currentId = 0;
 }
 Order.prototype.addPizza = function(pizza) {
@@ -71,9 +72,10 @@ function displayOrderDetails(order) {
   orderList.append(htmlForOrder);
   $("#totalCostDiv").html("$" + order.orderTotal.toFixed(2));
 }
+let order = new Order;
 // jQuery
 $(document).ready(function() {
-  let order = new Order;
+  
   $("form#pizzaForm").submit(function(event) {
     event.preventDefault();
     let size = $("input:radio[name=pizzaSizes]:checked").val();
