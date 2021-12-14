@@ -23,6 +23,9 @@ Order.prototype.calculateOrderTotal = function() {
 function Pizza(size, toppings) {
   this.size = size;
   this.toppings = toppings;
+  this.toppingPrice = 0;
+  this.pizzaPrice = 0;
+  this.id = 0;
 }
 Pizza.prototype.calculateToppingPrice = function() {
   this.toppingPrice = this.toppings.length;
