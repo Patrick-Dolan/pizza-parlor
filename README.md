@@ -89,7 +89,7 @@ order.orderTotal;
 **Code:**  
 let size = "small";  
 let toppings = ["cheese", "pepperoni"];  
-let pizza1 = new Pizza(size)  
+let pizza1 = new Pizza(size, toppings)  
 pizza1;  
 **Expected Output:** "Pizza {size: "small", toppings: ["cheese", "pepperoni"]}"  
   
