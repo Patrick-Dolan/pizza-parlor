@@ -72,10 +72,9 @@ function displayOrderDetails(order) {
   orderList.append(htmlForOrder);
   $("#totalCostDiv").html("$" + order.orderTotal.toFixed(2));
 }
-let order = new Order;
 // jQuery
 $(document).ready(function() {
-  
+  let order = new Order;
   $("form#pizzaForm").submit(function(event) {
     event.preventDefault();
     let size = $("input:radio[name=pizzaSizes]:checked").val();
@@ -90,7 +89,6 @@ $(document).ready(function() {
     order.calculateOrderTotal();
     $("#transactionSubmit button").prop("disabled", false);
     displayOrderDetails(order);
-    //console.log(order);
   });
   $("#transactionSubmit button").click(function() {
     $("#buildPizza").hide();
