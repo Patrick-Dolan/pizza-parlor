@@ -56,7 +56,7 @@ let order = new Order();
 let pizza1 = new Pizza("small");  
 order.addPizza(pizza1);  
 order;  
-**Expected Output:** "Order {pizzas: {pizza1}}"  
+**Expected Output:** "Order {pizzas: {pizza1}, orderTotal: 0, currentId: 1}"  
   
 **describe Order.prototype.assignId()**  
   
