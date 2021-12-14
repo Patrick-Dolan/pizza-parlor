@@ -83,14 +83,15 @@ order.calculateOrderTotal();
 order.orderTotal;
 **Expected Output:** "31"  
   
-**describe Pizza(size)**  
+**describe Pizza(size, toppings)**  
   
 **Test:** "It should return the details on the pizza"  
 **Code:**  
 let size = "small";  
+let toppings = ["cheese", "pepperoni"];  
 let pizza1 = new Pizza(size)  
 pizza1;  
-**Expected Output:** "Pizza {size: "small"}"  
+**Expected Output:** "Pizza {size: "small", toppings: ["cheese", "pepperoni"]}"  
   
 **describe Pizza.prototype.addToppings(toppings)**  
   
