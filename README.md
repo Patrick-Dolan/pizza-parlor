@@ -68,7 +68,7 @@ let pizza2 = new Pizza("medium");
 order.addPizza(pizza1);  
 order.addPizza(pizza2);  
 order.pizzas[2];  
-**Expected Output:** "Pizza {size: "medium", id: 2}"  
+**Expected Output:** "Pizza {size: "medium", toppings: [], toppingPrice: 0, pizzaPrice: 0, id: 2}"  
   
 **describe Order.prototype.calculateOrderTotal()**  
   
