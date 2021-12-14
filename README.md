@@ -93,15 +93,6 @@ let pizza1 = new Pizza(size)
 pizza1;  
 **Expected Output:** "Pizza {size: "small", toppings: ["cheese", "pepperoni"]}"  
   
-**describe Pizza.prototype.addToppings(toppings)**  
-  
-**Test:** "It should add toppings array to pizza object"  
-**Code:**  
-let toppingsArray = ["cheese", "pepperoni", "bell_peppers"];  
-pizza1.addToppings(toppingsArray);  
-pizza1.toppings;  
-**Expected Output:** "["cheese", "pepperoni", "bell_peppers"]"  
-  
 **describe Pizza.prototype.calculateToppingPrice()**  
   
 **Test:** "It should add together the cost for all toppings and add them to the pizza object"  
